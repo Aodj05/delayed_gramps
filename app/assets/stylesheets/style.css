@@ -1,0 +1,125 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  background: white;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.delayedgramps {
+  border: 1px solid #ccc;
+  width: 614px;
+}
+
+.delayedgramps-header {
+  height: 60px;
+  padding: 1rem;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.delayedgramps-profile-image {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.delayedgramps-profile-name {
+  float: left;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #262626;
+  margin-left: 1rem;
+}
+
+.delayedgramps-actions {
+  float: right;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.delayedgramps-image {
+  width: 100%;
+}
+
+.delayedgramps-like-icon,
+.delayedgramps-comment-icon,
+.delayedgramps-share-icon,
+.delayedgramps-save-icon {
+  padding: 8px;
+  float: left;
+}
+
+.delayedgramps-like-icon {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.delayedgramps-save-icon {
+  float: right;
+}
+
+.delayedgramps-likes {
+  padding: 0 16px;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.delayedgramps-comment-profile {
+  font-weight: 600;
+}
+
+.delayedgramps-comments {
+  padding: 0 16px;
+}
+
+.delayedgramps-comment {
+  margin-bottom: 4px;
+  line-height: 18px;
+  padding: 0;
+}
+
+.delayedgramps-comment-like-icon {
+  float: right;
+  width: 12px;
+  height: 12px;
+}
+
+.delayedgramps-comment-form {
+  border-top: 1px solid #ccc;
+}
+
+.delayedgramps-comment-form .delayedgramps-comment-form-input {
+  border: none;
+  font-size: 0.9rem;
+  color: #262626;
+  padding: 1rem;
+  width: 90%;
+}
+
+::placeholder, ::-ms-input-placeholder {
+  color: #8e8e8e;
+}
+
+input:focus {
+  outline: none;
+}
+
+.delayedgramps-comment-form .delayedgramps-comment-form-submit {
+  color: #0095f6;
+  font-weight: 400;
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
