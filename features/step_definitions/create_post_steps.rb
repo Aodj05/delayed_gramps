@@ -1,6 +1,9 @@
 Given("I'm logged in") do
     visit "/"
-    expect(page).to have_content("Welcome")
+    sign_up
+    sign_out
+    sign_in
+    expect(page).to have_content("Welcome Justin")
 end
 
 When('I create a post') do
