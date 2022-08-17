@@ -80,5 +80,5 @@ end
 
 gem "redis", "~> 4.7"
 gem "cable_ready", "~> 4.5"
-gem "stimulus_reflex", "~> 3.4"
+gem 'stimulus_reflex', '~> 3.4', '>= 3.4.1'
 gem "webpacker", "~> 5.4.3"
