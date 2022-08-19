@@ -76,6 +76,7 @@ group :test do
   gem "webdrivers"
   gem "cucumber-rails", require: false
   gem "database_cleaner"
+  gem 'shoulda-matchers', '~> 5.1'
 end
 
 gem "redis", "~> 4.7"

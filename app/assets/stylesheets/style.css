@@ -18,6 +18,7 @@ body {
 .delayedgramps {
   border: 1px solid #ccc;
   width: 614px;
+  margin-bottom: 2rem;
 }
 
 .delayedgramps-header {

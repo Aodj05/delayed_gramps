@@ -1,13 +1,13 @@
 class PostsController < ApplicationController
     include CableReady::Broadcaster
-    
+
     def new
         @post = Post.new
     end
 
     def create
         @post = Post.new(post_params)
-        @post.save
+        current_user.posts << @post
         cable_ready["posts"].insert_adjacent_html(
           selector: "#posts",
           position: "afterbegin",
