@@ -1,7 +1,7 @@
-def sign_up
+def sign_up(email: "Justin@example.com")
     visit "/"
     click_on "user-signup"
-    fill_in "user-email", with: "Justin@example.com"
+    fill_in "user-email", with: email
     fill_in "user-username", with: "Justin"
     fill_in "user-password", with: "secret123"
     fill_in "user-password-confirmation", with: "secret123"
