@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class ExampleReflex < ApplicationReflex
+class PostReflex < ApplicationReflex
+  delegate :current_user, to: connection
   # Add Reflex methods in this file.
   #
   # All Reflex instances include CableReady::Broadcaster and expose the following properties:
@@ -31,5 +32,21 @@ class ExampleReflex < ApplicationReflex
   #   end
   #
   # Learn more at: https://docs.stimulusreflex.com/reflexes#reflex-classes
+  def like
+    post = Post.find(element.dataset[:id])
+    post.like!(current_user)
+    cable_ready["posts"].innerhtml(
+      selector: "#delayedgramps-post-#{post.id}-likes",
+      html: ActionController::Base.helpers.pluralize(post.likes.count, "like")
+    ).broadcast
+  end
 
+  def unlike
+    post = Post.find(element.dataset[:id])
+    post.unlike!(current_user)
+    cable_ready["posts"].innerhtml(
+      selector: "#delayedgramps-post-#{post.id}-likes",
+      html: ActionController::Base.helpers.pluralize(post.like.count, "like")
+    ).broadcast
+  end
 end

@@ -1,13 +1,18 @@
-<div class="delayedgramps">
-  <div class="delayedgramps-body"><%= post.body %></div>
+<div class="delayedgramps" id="delayedgramps-post=<%= post.id %>">
+  <div class="delayedgramps-header">
+    <span class="delayedgramps-actions">···</div>
+    <div><%= image_tag "Logo.png", class: "delayedgramps-profile-image" %></div>
+    <span class="delayedgramps-profile-name"><%= current_user.username %></span>
+  </div>
+  <div class="delayedgramps-body p-4"><%= post.body %></div>
   <div><%= image_tag post.file, class: "delayedgramps-image" %></div>
   <div>
     <% if post.liked?(current_user) %>
-      <%= button_to likes_path(post), class: "delayedgramps-like-icon post-like" do %>
+      <%= button_to likes_path(post), class: "delayedgramps-like-icon post-like", data: { reflex: "click->PostReflex#unlike" }, id: post.id do %>
         <%= image_tag "liked.png", class: "" %>
       <% end %>
     <% else %>
-      <%= button_to likes_path(post), class: "delayedgramps-like-icon post-like" do %>
+      <%= button_to likes_path(post), class: "delayedgramps-like-icon post-like", data: { reflex: "click->PostReflex#like", id: post.id } do %>
         <%= image_tag "like.png", class: "" %>
       <% end %>
     <% end %>
@@ -18,5 +23,16 @@
   </div>
   <div class="delayedgramps-likes">
     <%= pluralize post.likes.count, "like" %>
+  </div>
+  <div class="delayedgramps-comments">
+    <% post.comments.each do |comment| %>
+      <%= render partial: "comments/comment", locals: { comment: comment } %>
+    <% end %>
+  </div>
+  <div class="delayedgramps-comment-form">
+    <%= form_for Comment.new, url: comments_path(post) do |f| %>
+      <%= f.text_field :body, class: "delayedgramps-comment-form-input", id: "" %>
+      <%= f.submit "Post", class: "delayedgramps-comment-form-submit" %>
+    <% end %>
   </div>
 </div>
