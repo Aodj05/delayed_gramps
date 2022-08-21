@@ -1,24 +1,17 @@
 # README
+Delayedgramp - Instagram clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Features:
+    -Signup/in
+    -Creating Posts for others to see
+    -Liking posts
+    -Navigating links
+    -Commenting
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Technology and libraries:
+    -Ruby 3
+    -Rails 7
+    -Devise
+    -Cucumber
+    -Stimulus/Stimulus_reflex
+    -Cable Ready
