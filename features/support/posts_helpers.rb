@@ -10,5 +10,5 @@ def like_post
 end
 
 def unlike_post
-    find(".post-unlike, match: :first").click
+    find(".post-unlike", match: :first).click
 end
