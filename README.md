@@ -14,4 +14,4 @@ Technology and libraries:
     -Devise
     -Cucumber
     -Stimulus/Stimulus_reflex
-    -Cable Ready
+    -CableReady
