@@ -21,9 +21,9 @@ test:
   database: db/test.sqlite3
 
 production:
-   dapter: postgresql
+  adapter: postgresql
   encoding: unicode
-  host: localhost 
+  host: localhost
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: sample_production
   username: sample
