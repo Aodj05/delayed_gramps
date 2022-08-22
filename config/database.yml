@@ -25,6 +25,6 @@ production:
   encoding: unicode
   host: localhost
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: sample_production
-  username: sample
+  database: delayedgramps_production
+  username: Justin
   password: <%= ENV['delayed_gramps_DATABASE_PASSWORD'] %>
