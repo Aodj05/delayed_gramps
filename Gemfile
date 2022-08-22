@@ -84,4 +84,4 @@ gem "cable_ready", "~> 4.5"
 gem 'stimulus_reflex', '~> 3.4', '>= 3.4.1'
 gem "webpacker", "~> 5.4.3"
 
-gem "tailwindcss-rails", "~> 2.0"
+# gem "tailwindcss-rails", "~> 2.0"
