@@ -13,5 +13,6 @@ Technology and libraries:
     -Rails 7
     -Devise
     -Cucumber
-    -Stimulus/Stimulus_reflex
+    -Stimulus
+    -Stimulus_reflex
     -CableReady
