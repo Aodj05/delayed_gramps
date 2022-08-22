@@ -295,8 +295,6 @@ GEM
     strscan (3.0.4)
     sys-uname (1.2.2)
       ffi (~> 1.1)
-    tailwindcss-rails (2.0.12-x64-mingw-ucrt)
-      railties (>= 6.0.0)
     thor (1.2.1)
     thread-local (1.1.0)
     timeout (0.3.0)
@@ -359,7 +357,6 @@ DEPENDENCIES
   sprockets-rails
   stimulus-rails
   stimulus_reflex (~> 3.4, >= 3.4.1)
-  tailwindcss-rails (~> 2.0)
   turbo-rails
   tzinfo-data
   web-console
