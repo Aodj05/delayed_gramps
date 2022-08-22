@@ -3,6 +3,9 @@
     "private": true,
     "engines": {
       "node": "16.13.2"
+    },
+    "version": "0.1.0",
+    "devDependencies": {
+      "webpack-dev-server": "^3.11.2"
     }
-    
   }
