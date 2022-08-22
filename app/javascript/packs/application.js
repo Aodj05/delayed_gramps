@@ -6,6 +6,3 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-
-import "controllers"
-import "tailwindcss/tailwind.css"
