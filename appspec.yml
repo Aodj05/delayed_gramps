@@ -89,7 +89,7 @@ hooks:
 # During the BeforeInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   BeforeInstall:
-    - location: 
+    - location: Scripts/UnzipResourceBundle.sh
       timeout:
       runas: 
     - location: 
