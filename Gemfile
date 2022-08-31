@@ -83,5 +83,6 @@ gem "redis", "~> 4.7"
 gem "cable_ready", "~> 4.5"
 gem 'stimulus_reflex', '~> 3.4', '>= 3.4.1'
 gem "webpacker", "~> 5.4.3"
+gem 'jekyll', '~> 4.2', '>= 4.2.2'
 
 # gem "tailwindcss-rails", "~> 2.0"
